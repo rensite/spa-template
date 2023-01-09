@@ -1,8 +1,18 @@
 {
   "name": "spa_template",
   "version": "0.0.1",
+  "type": "module",
   "license": "MIT",
+  "files": ["dist"],
   "Author": "Renat Galin (RenSite)",
+  "main": "./dist/spa-template.umd.cjs",
+  "module": "./dist/spa-template.js",
+  "exports": {
+    ".": {
+      "import": "./dist/spa-template.js",
+      "require": "./dist/spa-template.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
