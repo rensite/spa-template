@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-  import IconGithub from '@/components/icons/Github.vue';
+  import IconGithub from '../components/icons/Github.vue';
 
   defineProps({
     projectName: String,
